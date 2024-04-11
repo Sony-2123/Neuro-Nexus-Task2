@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Quiz Game Online" />
+    <meta name="description" content="A Friendly Game for developers." />
+    <meta name="author" content="AhsanParadise" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Friendly Quiz Game</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body onload="myLoader()" style="margin: 0;">
+    <div id="loader">
+      <p class="fade-in">
+        <b>Welcome to  Quiz Game</b><br /><br />
+        Loading....
+      </p>
+    </div>
+    <div id="container">
+      <button id="start">Start Quiz!</button>
+      <div id="quiz" style="display: none;">
+        <div id="question"></div>
+        <div id="qImg"></div>
+        <div id="choices">
+          <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+          <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+          <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+          <button class="choice" id="D" onclick="checkAnswer('D')"></button>
+        </div>
+        <div id="timer">
+          <div id="counter"></div>
+        </div>
+        <div id="progress"></div>
+      </div>
+      <div id="scoreContainer" style="display: none;"></div>
+    </div>
+    <footer>
+      Copyright © 2024 - All rights Reserved - P Sony
+    </footer>
+    <script src="./jsn.js"></script>
+  </body>
+</html>
